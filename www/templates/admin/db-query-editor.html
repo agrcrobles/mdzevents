@@ -1,0 +1,68 @@
+<ion-view view-title="QueryEditor">
+<ion-content>
+
+<ion-slide-box on-slide-changed="slideHasChanged($index)">
+<ion-slide>
+<div class="box">
+	<form novalidate class="simple-form">
+		<h1>query editor</h1>
+		<div ng-controller="db.QueryEditorCtrl">
+
+			<ion-item>
+
+			<label class="item item-input">
+				<span class="input-label">DatabaseName</span> 
+				<input type="text" ng-model="database.name">
+			</label>
+
+			<label class="item item-input">
+				<span class="input-label">Query</span> 
+				<input type="text" ng-model="database.query">
+			</label>
+			<button ng-click="run()" class="button button-full button-dark">
+				SQLite.Query();
+			</button>
+			<ion-item ng-if="msg" class="bar bar-assertive">
+			<h1 class="title">{{msg}} - {{results.length}} rows affected</h1>
+		</ion-item>
+
+	</ion-item>
+	<ion-item>
+
+	<ion-scroll zooming="true" direction="y" class="text-scrolling-height">
+	
+	<pre>{{results}}</pre>  
+</ion-scroll>
+</ion-item>
+
+</div> 
+</div>
+</ion-slide>
+<ion-slide>
+<div class="box">
+<h1>query executor</h1>
+		<div ng-controller="db.QueryExecutorCtrl">
+		<ion-item>
+
+			<label class="item item-input">
+				<span class="input-label">DatabaseName</span> 
+				<input type="text" ng-model="database.name">
+			</label>
+
+			<label class="item item-input">
+				<span class="input-label">Exec Query</span> 
+				<input type="text" ng-model="database.query">
+			</label>
+			<button ng-click="run()" class="button button-full button-dark">
+				SQLite.Execute();
+			</button>
+			<ion-item ng-if="msg" class="bar bar-assertive">
+			<h1 class="title">{{msg}} - {{results.length}} rows affected</h1>
+		</ion-item>
+
+		</div> 
+</div>
+</ion-slide>
+</form>
+</ion-content>
+</ion-view>

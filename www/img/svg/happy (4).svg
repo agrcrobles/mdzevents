@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="22">
+	<rect y="0" fill="{{colorRating(item.rank.rate, 1)}}"
+		width="20" height="6"
+		rx="4" ry="4"/>
+		<rect x="21" y="0" fill="{{colorRating(item.rank.rate, 2)}}"
+			width="20" height="6"
+			rx="3" ry="3"/>
+			<rect x="43" y="0" fill="{{colorRating(item.rank.rate, 3)}}"
+				width="20" height="6"
+				rx="4" ry="4"/> 
+			</svg>
