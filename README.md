@@ -1,4 +1,4 @@
-PrescientTraveller
+MdzEvents
 
 ==========
 **Setup**
