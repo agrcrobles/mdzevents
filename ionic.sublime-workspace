@@ -1,0 +1,424 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"cu",
+				"currentDevice"
+			],
+			[
+				"FCA",
+				"FCALLEJON_SET_ACTIVE_COMMAND"
+			],
+			[
+				"FCALLEJON_",
+				"FCALLEJON_TURN_ON_COMMAND"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 159.0,
+		"selected_items":
+		[
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+			"ls",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/fer/work/bitbucket/mdzeventos/ionic.project",
+		"/home/fer/sc/u4b-android-4.4.2/build/target/product/full_base.mk",
+		"/home/fer/sc/u4b-android-4.4.2/build/core/main.mk",
+		"/home/fer/sc/u4b-android-4.4.2/build/target/product/base.mk",
+		"/home/fer/sc/u4b-android-4.4.2/build/target/product/core_minimal.mk",
+		"/home/fer/sc/u4b-android-4.4.2/build/target/product/generic_no_telephony.mk",
+		"/home/fer/sc/u4b-android-4.4.2/device/rockchip/rk3188/rk3188.mk",
+		"/home/fer/sc/u4b-android-4.4.2/device/rockchip/rksdk/buildspec-rk3188.mk",
+		"/home/fer/sc/u4b-android-4.4.2/device/rockchip/rksdk/init.rc",
+		"/home/fer/sc/u4b-android-4.4.2/device/sugarcube/sgone/sgone.mk",
+		"/home/fer/sc/u4b-android-4.4.2/device/sugarcube/sgone/AndroidProducts.mk",
+		"/home/fer/sc/u4b-android-4.4.2/device/rockchip/rk3188/system.prop",
+		"/home/fer/sc/u4b-android-4.4.2/device/rockchip/rk3188/wifi_bt.mk",
+		"/home/fer/sc/u4b-android-4.4.2/device/rockchip/rksdk/initlogo.rle",
+		"/home/fer/sc/u4b-android-4.4.2/device/rockchip/rksdk/wifi_bt_common.mk",
+		"/home/fer/sc/u4b-android-4.4.2/build/target/product/sdk.mk",
+		"/home/fer/sc/u4b-android-4.4.2/build/target/product/full_base_telephony.mk",
+		"/home/fer/sc/u4b-android-4.4.2/build/target/product/core_base.mk",
+		"/home/fer/sc/u4b-android-4.4.2/build/target/product/core.mk",
+		"/home/fer/sc/u4b-android-4.4.2/build/target/product/aosp_x86.mk",
+		"/home/fer/sc/u4b-android-4.4.2/build/target/product/aosp_mips.mk",
+		"/home/fer/sc/u4b-android-4.4.2/build/target/product/aosp_base_telephony.mk",
+		"/home/fer/sc/u4b-android-4.4.2/build/target/product/aosp_base.mk",
+		"/home/fer/sc/u4b-android-4.4.2/build/target/product/aosp_arm.mk",
+		"/home/fer/sc/u4b-android-4.4.2/bootable/recovery/bootloader.cpp",
+		"/home/fer/sc/u4b-android-4.4.2/build/target/product/emulator.mk",
+		"/home/fer/sc/u4b-android-4.4.2/build/target/product/large_emu_hw.mk",
+		"/home/fer/sc/u4b-android-4.4.2/build/target/product/vbox_x86.mk",
+		"/home/fer/sc/u4b-android-4.4.2/packages/wallpapers/Basic/res/drawable-xhdpi/ic_launcher_wallpaper.png",
+		"/home/fer/sc/logcat",
+		"/home/fer/sc/u4b-android-4.4.2/device/rockchip/rksdk/wifi_bt.mk",
+		"/home/fer/sc/u4b-android-4.4.2/device/rockchip/rksdk/init.rk30board.usb.rc",
+		"/home/fer/sc/u4b-android-4.4.2/logcat.txt",
+		"/home/fer/sc/u4b-android-4.4.2/build/target/product/runtime_common.mk",
+		"/home/fer/sc/u4b-android-4.4.2/build/target/product/full_mips.mk",
+		"/home/fer/sc/u4b-android-4.4.2/build/target/product/full.mk",
+		"/home/fer/sc/u4b-android-4.4.2/build/target/product/generic.mk",
+		"/home/fer/sc/u4b-android-4.4.2/build/target/product/generic_mips.mk",
+		"/home/fer/sc/buildall.sh",
+		"/home/fer/linux-rockchip/rockchip-3.0/drivers/video/rockchip/hdmi/Makefile",
+		"/home/fer/linux-rockchip/rockchip-3.0/drivers/video/rockchip/hdmi/Kconfig",
+		"/home/fer/linux-rockchip/rockchip-3.0/drivers/video/rockchip/hdmi/it66121/hdmitx_sys.c",
+		"/home/fer/linux-rockchip/rockchip-3.0/drivers/video/rockchip/hdmi/it66121/hdmitx_hdcp.c",
+		"/home/fer/linux-rockchip/rockchip-3.0/drivers/video/rockchip/hdmi/it66121/hdmitx_drv.h",
+		"/home/fer/linux-rockchip/rockchip-3.0/drivers/video/rockchip/hdmi/it66121/hdmitx_drv.c",
+		"/home/fer/linux-rockchip/rockchip-3.0/drivers/video/rockchip/hdmi/it66121/it66121.h",
+		"/home/fer/linux-rockchip/rockchip-3.0/drivers/video/rockchip/hdmi/fcallejon/fcallejon.c",
+		"/home/fer/linux-rockchip/rockchip-3.0/drivers/video/rockchip/hdmi/it66121/hdmitx_sys.h",
+		"/home/fer/linux-rockchip/rockchip-3.0/drivers/video/rockchip/hdmi/it66121/config.h",
+		"/home/fer/linux-rockchip/rockchip-3.0/arch/arm/mach-omap2/board-h4.c",
+		"/home/fer/linux-rockchip/rockchip-3.0/Documentation/i2c/instantiating-devices",
+		"/home/fer/linux-rockchip/rockchip-3.0/Makefile",
+		"/home/fer/linux-rockchip/rockchip-3.0/drivers/video/rockchip/hdmi/it66121/it66121.c",
+		"/home/fer/.config/sublime-text-3/Packages/User/SublimeLinter.sublime-settings",
+		"/home/fer/linux-rockchip/rockchip-3.0/include/linux/i2c.h",
+		"/home/fer/linux-rockchip/rockchip-3.0/drivers/video/rockchip/hdmi/rk_hdmi.h",
+		"/home/fer/linux-rockchip/rockchip-3.0/include/linux/i2o-dev.h",
+		"/home/fer/linux-rockchip/rockchip-3.0/drivers/hwmon/adm1025.c",
+		"/home/fer/linux-rockchip/rockchip-3.0/drivers/video/rockchip/hdmi/fcallejon/Kconfig",
+		"/home/fer/linux-rockchip/rockchip-3.0/drivers/video/rockchip/hdmi/fcallejon/Makefile",
+		"/home/fer/libcec-master/src/lib/adapter/RPi/RPiCECAdapterCommunication.h",
+		"/home/fer/libcec-master/src/testclient/main.cpp",
+		"/home/fer/libcec-master/src/lib/CECClient.cpp",
+		"/home/fer/libcec-master/src/lib/devices/CECBusDevice.h",
+		"/home/fer/libcec-master/src/lib/devices/CECBusDevice.cpp",
+		"/home/fer/libcec-master/src/lib/implementations/PHCommandHandler.cpp",
+		"/home/fer/linux-rockchip/rockchip-3.0/.config",
+		"/home/fer/linux-rockchip/rockchip-3.0/drivers/video/rockchip/hdmi/fcallejon/fcallejon_hal.c",
+		"/home/fer/libcec-master/src/lib/adapter/RPi/RPiCECAdapterDetection.cpp",
+		"/home/fer/libcec-master/src/lib/implementations/PHCommandHandler.h",
+		"/home/fer/libcec-master/src/lib/devices/CECTuner.h",
+		"/home/fer/libcec-master/src/lib/devices/CECTuner.cpp",
+		"/home/fer/libcec-master/src/lib/devices/CECTV.cpp",
+		"/home/fer/libcec-master/src/LibCecSharp/LibCecSharp.cpp",
+		"/home/fer/libcec-master/src/lib/LibCEC.cpp",
+		"/home/fer/libcec-master/src/lib/LibCEC.h",
+		"/home/fer/libcec-master/src/LibCecTray/LibCECTray.csproj",
+		"/home/fer/libcec-master/src/LibCecTray/settings/CECSettings.cs",
+		"/home/fer/libcec-master/src/LibCecTray/controller/CECController.cs",
+		"/home/fer/libcec-master/src/LibCecTray/controller/actions/SendStandby.cs",
+		"/home/fer/libcec-master/src/LibCecTray/controller/actions/UpdateEvent.cs",
+		"/home/fer/linux-rockchip/rockchip-3.0/drivers/video/rockchip/hdmi/rk2928/Kconfig",
+		"/home/fer/linux-rockchip/rockchip-3.0/drivers/video/hdmi/chips/Makefile",
+		"/home/fer/linux-rockchip/rockchip-3.0/README"
+	],
+	"find":
+	{
+		"height": 22.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/home/fer/sc/u4b-android-4.4.2",
+			"/home/fer/sc/u4b-android-4.4.2/build/target/product",
+			"/home/fer/sc/u4b-android-4.4.2",
+			"/home/fer/sc/u4b-android-4.4.2/build/target/product",
+			"/home/fer/sc/u4b-android-4.4.2",
+			"/home/fer/sc/u4b-android-4.4.2/build/target/product",
+			"/home/fer/sc/u4b-android-4.4.2/build",
+			"/home/fer/sc/u4b-android-4.4.2/build/target/product",
+			"/home/fer/linux-rockchip/rockchip-3.0/drivers/video/rockchip/hdmi/it66121",
+			"/home/fer/linux-rockchip/rockchip-3.0/drivers/video/rockchip/hdmi",
+			"/home/fer/linux-rockchip/rockchip-3.0/drivers/video/rockchip/hdmi/it66121",
+			"/home/fer/linux-rockchip/rockchip-3.0/drivers/video/rockchip/hdmi",
+			"/home/fer/linux-rockchip/rockchip-3.0/drivers/video/rockchip/hdmi/it66121",
+			"/home/fer/linux-rockchip/rockchip-3.0/drivers/video/rockchip/hdmi",
+			"/home/fer/linux-rockchip/rockchip-3.0/drivers/video/rockchip/hdmi/it66121",
+			"/home/fer/linux-rockchip/rockchip-3.0/drivers/video/rockchip/hdmi",
+			"/home/fer/linux-rockchip/rockchip-3.0/drivers/video/rockchip/hdmi/it66121",
+			"/home/fer/linux-rockchip/rockchip-3.0",
+			"/home/fer/linux-rockchip/rockchip-3.0/drivers/video/rockchip/hdmi/it66121",
+			"/home/fer/linux-rockchip/rockchip-3.0",
+			"/home/fer/linux-rockchip/rockchip-3.0/drivers/video/rockchip/hdmi/it66121",
+			"/home/fer/linux-rockchip/rockchip-3.0",
+			"/home/fer/linux-rockchip/rockchip-3.0/drivers/video/rockchip/hdmi/it66121",
+			"/home/fer/linux-rockchip/rockchip-3.0",
+			"/home/fer/linux-rockchip/rockchip-3.0/drivers",
+			"/home/fer/linux-rockchip/rockchip-3.0/drivers/video/rockchip/hdmi",
+			"/home/fer/libcec-master/src",
+			"/home/fer/linux-rockchip/rockchip-3.0"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"AP6xxx",
+			"ro.debuggable",
+			"install_non_market_apps",
+			"tv.mk",
+			"rle",
+			"jpg",
+			"*.jpg",
+			"SugarCubeLauncher",
+			"3188",
+			"*.mk",
+			"sms",
+			"defcontainer",
+			"printspooler",
+			"fused",
+			"GpsLocation",
+			"GPS",
+			"Keyguard",
+			"KeyguardService",
+			"dialer",
+			"rk_wifi_load_driver",
+			"apache",
+			"telephony",
+			"pop",
+			"talk",
+			"location",
+			"audio",
+			"AudioCache",
+			"appcache",
+			"cache",
+			"Sensor",
+			"appacache",
+			"cloudprint",
+			"EXCEPTION",
+			"camera",
+			"mediaserver",
+			"rk3188",
+			"rk-3188",
+			"media.audio_flinger",
+			"AudioFlinger",
+			"camera",
+			"gcm",
+			"CallManager",
+			"SugarCubeLauncher",
+			"Launcher2",
+			"Laucher2",
+			"SugarCubeLauncher",
+			"it66121.h",
+			"it66121_hal.h",
+			"REG_TX_DEVICE_ID1",
+			"0x36",
+			"FCALLEJON_SET_ACTIVE_COMMAND",
+			"hdmitx_drv.h",
+			"CEC_ReadI2C_ByteN",
+			"CEC_ReadI2C_Byte",
+			" CEC",
+			"CEC",
+			"Temp&=",
+			"typedef BYTE",
+			"HDMITX_PowerOn()",
+			"TX0ADR, RegAddr",
+			"hdmitx_LoadRegSetting",
+			"HDMITX_PwrOn_Table",
+			"hdmiTxDev",
+			"hdmitx_LoadRegSetting",
+			"it66121_insert(",
+			"HDMITX_PowerDown",
+			"InitHDMITX",
+			"Switch_HDMITX_Bank",
+			"void Switch_HDMITX_Bank",
+			"Switch_HDMITX_Bank",
+			"hdmitx_LoadRegSetting",
+			"HDMITX_InitTxDev",
+			"REG_TX_VENDOR_ID0",
+			"HDMITX_ReadI2C_Byte",
+			"DBG",
+			"SYS_STATUS HDMITX_SetI2C_Byte",
+			"HDMITX_SetI2C_Byte",
+			"void HDMITX_SetI2C_Byte",
+			" Switch_HDMITX_Bank(",
+			"Switch_HDMITX_Bank(u",
+			"Switch_HDMITX_Bank",
+			"it66121_initial",
+			"h4_i2c_board_info",
+			"omap2",
+			"0x8D",
+			"0x98",
+			"tempData",
+			"i2c_client {",
+			"readi2c",
+			"myDevice",
+			"I2C_BOARD_INFO(\"ro",
+			"I2C_BOARD_INFO(\"it",
+			"I2C_BOARD_INFO(",
+			"I2C_BOARD_INFO(\"it6621",
+			"i2c_driver",
+			"i2c_client",
+			"sample",
+			"I2C_ADAP_CLASS",
+			"I2C_ADAP_CLASS_SMBUS",
+			"fcallejon_client",
+			"i2c_new_device",
+			"sample_i2c",
+			"i2c_new_device",
+			"I2C_CLASS_SOMETHING",
+			"normal_i2c",
+			"normal_isa_range",
+			"cec_command",
+			"CONFIG_IT66121",
+			" ActivateSource",
+			"ActivateSource",
+			"Activate",
+			"m_client ",
+			"m_libCec",
+			"Settings",
+			"persist",
+			"hdmi_edid_parse_extensions",
+			"pedid",
+			"CEC",
+			"#",
+			"it66121",
+			"BYTE i2c_read_byte(",
+			" i2c_read_byte",
+			"i2c_read_byte",
+			"IT66121",
+			"CONFIG_",
+			"hdmi",
+			"CONFIG_RK610_HDMI"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"temp_data",
+			"fcallejon",
+			"fcallejon_driver",
+			"fcallejon"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 21.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 88.0
+	},
+	"project": "ionic.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"~/sc/kernel.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 248.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
