@@ -16,3 +16,5 @@ www/css/ionic.app.min.css
 www/js/config.js
 www/js/shared/config.js
 *.css.map
+hooks
+*.apk
