@@ -1,11 +1,13 @@
 angular.module('mdzevents.db', [])
-.factory('databaseService', function($cordovaSQLite ,db, $q) {
+.factory('databaseService', ['$cordovaSQLite', 'db', '$q', function($cordovaSQLite ,db, $q) {
 
 	return {
 		openDBMaps : function() {
 			return $cordovaSQLite.openDB(db.maps);
 		},
 		openDB : function(databaseName) {
+			console.log("$cordovaSQLite = " + !!$cordovaSQLite);
+			console.log("window.SQLitePlugin = " + !!window.SQLitePlugin);
 			return $cordovaSQLite.openDB(databaseName);
 		}, 
 		exec: function(db, query, bindings) {
@@ -39,6 +41,4 @@ angular.module('mdzevents.db', [])
 	        return result.rows.item(0);
 	    }
 	};
-
-
-});
+}]);

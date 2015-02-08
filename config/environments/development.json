@@ -1,6 +1,4 @@
 {
-  "foo": "bar4",
   "endpoint": "http://localhost:3333/",
-  "db": "mdz",
-  "queries-insert-request" : "insert into request values(?, ?);"
+  "db": "mdz"
 }

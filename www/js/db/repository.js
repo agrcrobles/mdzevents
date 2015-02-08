@@ -6,6 +6,7 @@
 
 		repository.prototype.open = function open(msg) {
       $log.info('open db');
+      console.log("databaseService = " + !!databaseService);
       this.odb = databaseService.openDB(db.queries);
     };
 

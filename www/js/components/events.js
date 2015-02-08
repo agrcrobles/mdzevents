@@ -10,7 +10,7 @@
 }])
 
 // base controller containing common functions for add/edit 
-.controller('mdzevent.QueryCtrl',	['$scope', '$controller', '$log', 'mdzevent.Service', 'mdzevent.service.resource', function ($scope, $controller, $log, svc, service) {
+.controller('mdzevent.QueryCtrl',	['$scope', '$controller', '$log', 'mdzevent.Service', 'mdzevent.service.resource', '$ionicLoading', function ($scope, $controller, $log, svc, service, $ionicLoading) {
 
      $log.info('mdzevent.QueryCtrl instantiated');
 
@@ -22,9 +22,14 @@
     };
 
     $scope.query = (function() {
+        $ionicLoading.show({ template: 'Obteniendo eventos...' });
         return service.get().$promise.then(function (mdzevent) {
             $scope.events = mdzevent;
-        });
+            $ionicLoading.hide();
+          }, 
+          function () { 
+            $ionicLoading.hide();
+          });
     });
 
     $scope.$on("$destroy", function() {
@@ -35,6 +40,10 @@
         return service.get({ id: id }).$promise.then(function(mdzevent) {
             $scope.item = mdzevent;
         });
+    };
+
+    $scope.getRandomBadge = function() {
+      return Math.floor((Math.random()*6)+1);
     };
 
 }])

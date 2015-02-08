@@ -18,34 +18,7 @@
       }
     }
   })
-  //admin section
-  .state('app.admin', {
-    url: "/admin",
-    views: {
-      'menuContent': {
-        templateUrl: "templates/admin.html",
-        controller: 'admin.UICtrl'
-      }
-    }
-  })
-  .state('app.populate', {
-    url: "/admin/populate",
-    views: {
-      'menuContent': {
-        templateUrl: "templates/admin/db-populate.html",
-        controller: 'db.PopulateCtrl'
-      }
-    }
-  })
-  .state('app.queryeditor', {
-    url: "/admin/queryeditor",
-    views: {
-      'menuContent': {
-        templateUrl: "templates/admin/db-query-editor.html",
-        controller: 'db.QueryEditorCtrl'
-      }
-    }
-  })
+  
   .state('app.css', {
     url: "/admin/css",
     views: {

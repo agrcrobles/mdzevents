@@ -1,49 +1,68 @@
-<ion-view >
-<ion-content ng-init="init()">
-<ion-slide-box>
-<ion-slide> 
-<div class="list list-">
-	<ion-scroll zooming="false" direction="y" style="height: 300px"> 
-		<div class="list card" ng-repeat="item in events.actividades" ng-class="color">
-		  	<div class="item item-avatar">
-				<img ng-src="img/svg/happy ({{item.categoria_id}}).svg"></img>
-				<h2 style="color: #831318;" ng-bind="item.titulo"></h2>
-				<p>FECHA - HORA</p>
-		  	</div>
+<style>div.wrapper{
+	float:left; /* important */
+	position:relative; /* important(so we can absolutely position the description div */
+	width: 100%;
+	height: auto;
+	align-content: center;
+	text-align: center;
+	background: black;	
+}
+div.wrapper img {
+	width: 90%;
+}
+div.attending
+{
+	float: right;
+}
+div.description .description_content {
+	font-size:16px;
+	font-weight: bolder;
+	padding:10px;
+	margin:0px;
+}
+div.description {
+	position:absolute; /* absolute position (so we can position it where we want)*/
+	bottom:0px; /* position will be on bottom */
+	left:0px;
+	width:100%;
 
+	background-color:black;
+	color:white;
+	opacity:0.6; /* transparency */
+	filter:alpha(opacity=60); /* IE transparency */
 
-		  	<div class="item item-body">
-    			<img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xpa1/v/t1.0-1/p160x160/10376299_10152479665823161_2372561054423118870_n.jpg?oh=6d07729642976abea512994cca77a0fc&oe=55967E30&__gda__=1432296353_f032ec81d82901422927af988b28061f"></img>
-	    		<p ng-bind-html="item.subtitulo"></p>
-	    	</div>
-
-		    <div class="item tabs tabs-secondary tabs-icon-left">
-				<a class="tab-item" href="#">
-					<i class="icon ion-thumbsup"></i>
-					Voy!
-				</a>
-				<a class="tab-item" href="#">
-					<i class="icon ion-plus-round"></i>
-					Invitar
-				</a>
-				<a class="tab-item" href="#">
-					<i class="icon ion-share"></i>
-					Compartir
-				</a>
-			</div>
-		</div>
-	</ion-scroll>
-</div>
-
-</div>
-
-</ion-slide>
-
-</ion-slide-box>
-<!-- 
-	<pre>{{events | json}}</pre>
---></div>
-
-
-</ion-content>
+	font-family: 'verdana';
+}
+div.description .date {
+	font-size:14px;
+	font-weight: bolder;
+	padding:10px;
+	margin:0px;
+	float: left;
+}
+div.description .buy_info {
+	font-size:12px;
+	font-weight: bolder;
+	padding:10px;
+	margin:0px;
+	float: right;
+}</style>
+<ion-view view-title="Agenda Cultural y Tur&iacute;stica">
+    <ion-content zooming="false" ng-init="init()" direction="y" scroll="true" has-bouncing="true">
+        <div class="list card" ng-repeat="item in events.actividades" ng-class="color" style="height: 100%">
+            <div class="item item-avatar"><img ng-src="img/svg/happy ({{item.categoria_id}}).svg">
+                <h2 style="color: #831318" ng-bind="item.titulo"></h2>
+                <div class="attending badge badge-assertive">&nbsp;{{item.categoria_id}}&nbsp;</div>
+            </div>
+            <div class="wrapper" class="item item-body"><img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xpa1/v/t1.0-1/p160x160/10376299_10152479665823161_2372561054423118870_n.jpg?oh=6d07729642976abea512994cca77a0fc&oe=55967E30&__gda__=1432296353_f032ec81d82901422927af988b28061f">
+                <div class="description">
+                    <p class="description_content" ng-bind-html="item.subtitulo"></p>
+                    <p class="date">FECHAS - HORAS</p>
+                    <p class="buy_info">{{item.precio}}</p>
+                </div>
+            </div>
+            <div class="item tabs tabs-secondary tabs-icon-left"><a class="tab-item" href="#"><i class="icon ion-thumbsup"></i> Voy!</a> <a class="tab-item" href="#"><i class="icon ion-plus-round"></i> Invitar</a> <a class="tab-item" href="#"><i class="icon ion-share"></i> Compartir</a>
+            </div>
+        </div>
+    </ion-content>
 </ion-view>

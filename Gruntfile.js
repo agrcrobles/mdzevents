@@ -59,7 +59,7 @@ module.exports = function (grunt) {
         constants: {
           ENV: {
             name: 'production',
-            apiEndpoint: 'http://api.yoursite.com/'
+            apiEndpoint: 'http://jatres.com.ar:3333/'
           }
         }
       }
