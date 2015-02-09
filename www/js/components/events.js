@@ -21,6 +21,10 @@
         return $scope.query();
     };
 
+    $scope.getImage = function(item) {
+      return "img/svg/happy (" + item.categoria_id + ").svg";
+    };
+
     $scope.query = (function() {
         $ionicLoading.show({ template: 'Obteniendo eventos...' });
         return service.get().$promise.then(function (mdzevent) {
@@ -40,10 +44,6 @@
         return service.get({ id: id }).$promise.then(function(mdzevent) {
             $scope.item = mdzevent;
         });
-    };
-
-    $scope.getRandomBadge = function() {
-      return Math.floor((Math.random()*6)+1);
     };
 
 }])

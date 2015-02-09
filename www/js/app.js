@@ -44,6 +44,7 @@ angular.module('mdzevents', [
   'mdzevents.libraries', 
   'mdzevents.components',
   'mdzevents.routes',
-  'mdzevents.interceptors'
+  'mdzevents.interceptors',
+  'pasvaz.bindonce'
    ])
 .config(['$resourceProvider', skipTrailingSlashes])
