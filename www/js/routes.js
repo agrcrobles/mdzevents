@@ -18,6 +18,26 @@
       }
     }
   })
+
+  .state('app.myevents', {
+    url: "/voya",
+    views: {
+      'menuContent': {
+        templateUrl: "templates/voya.html",
+        controller: 'mdzevent.MyEventsUICtrl'
+      }
+    }
+  })
+
+  .state('app.event-info', {
+    url: "/info",
+    views: {
+      'menuContent': {
+        templateUrl: "templates/event-info.html",
+        controller: 'mdzevent.EventInfoUICtrl'
+      }
+    }
+  })
   
   .state('app.css', {
     url: "/admin/css",

@@ -9,6 +9,7 @@ angular.module('mdzevents.db', [])
 			console.log("$cordovaSQLite = " + !!$cordovaSQLite);
 			console.log("window.sqlitePlugin = " + !!window.sqlitePlugin);
 			// workaround to solve sqlitePlugin undefined .... anyway ... it seems to work
+			return window.openDatabase(databaseName, '1.0', databaseName, 1 * 1024 * 1024);
 			if(window.cordova) {
 			    return $cordovaSQLite.openDB({name: databaseName});
 			} else {

@@ -10,7 +10,9 @@
 }])
 
 // base controller containing common functions for add/edit 
-.controller('mdzevent.QueryCtrl',	['$scope', '$controller', '$log', 'mdzevent.Service', 'mdzevent.service.resource', '$ionicLoading', function ($scope, $controller, $log, svc, service, $ionicLoading) {
+.controller('mdzevent.QueryCtrl',	['$scope', '$controller', '$log', 'mdzevent.Service', 
+  'mdzevent.service.resource', '$ionicLoading', '$state',
+  function ($scope, $controller, $log, svc, service, $ionicLoading, $state) {
 
      $log.info('mdzevent.QueryCtrl instantiated');
 
@@ -46,6 +48,9 @@
         });
     };
 
+    $scope.info = function() {
+        $state.go('app.event-info');
+    };
 }])
 
 .service('mdzevent.Service', function(baseService){
