@@ -7,6 +7,7 @@ var routes = require('./config/routes.js');
 
 var app = express();
 
+app.use(express.compress());
 app.use(config.allowCrossDomain);
 app.use(express.bodyParser());
 

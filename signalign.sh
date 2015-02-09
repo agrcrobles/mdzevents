@@ -5,6 +5,7 @@ jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore grow.keystore .
 
 echo "Aligning apk"
 
+rm -f mdze.apk
 zipalign -v 4 ./platforms/android/ant-build/MdzEventos-release-unsigned.apk mdze.apk
 
 echo "Done!"
