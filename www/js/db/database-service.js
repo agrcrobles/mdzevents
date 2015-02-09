@@ -1,5 +1,5 @@
 angular.module('mdzevents.db', [])
-.factory('databaseService', ['$cordovaSQLite', 'db', '$q', function($cordovaSQLite ,db, $q) {
+.factory('databaseService', ['$cordovaSQLite', 'db', '$q', '$window', function($cordovaSQLite ,db, $q, $window) {
 
 	return {
 		openDBMaps : function() {
@@ -7,8 +7,13 @@ angular.module('mdzevents.db', [])
 		},
 		openDB : function(databaseName) {
 			console.log("$cordovaSQLite = " + !!$cordovaSQLite);
-			console.log("window.SQLitePlugin = " + !!window.SQLitePlugin);
-			return $cordovaSQLite.openDB(databaseName);
+			console.log("window.sqlitePlugin = " + !!window.sqlitePlugin);
+			// workaround to solve sqlitePlugin undefined .... anyway ... it seems to work
+			if(window.cordova) {
+			    return $cordovaSQLite.openDB({name: databaseName});
+			} else {
+			    return window.openDatabase(databaseName, '1.0', databaseName, 5 * 1024 * 1024);
+			}
 		}, 
 		exec: function(db, query, bindings) {
 			return $cordovaSQLite.execute(db, query, bindings);

@@ -1,4 +1,5 @@
 {
   "endpoint": "http://jatres.com.ar:3333/",
-  "db": "mdz"
+  "db": "mdz",
+  "queries-insert-request" : "insert into request values(?, ?);"
 }

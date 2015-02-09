@@ -1,7 +1,5 @@
 angular.module('mdzevents.admin.db.populate', [])
-
-
-.controller('db.PopulateCtrl', function($scope, db, populateService){
+.controller('db.PopulateCtrl', ['$scope', 'db', 'populateService', function($scope, db, populateService){
 
 	var init_requests = function(){
 		return populateService.populate_requests().then(function(){
@@ -21,14 +19,14 @@ angular.module('mdzevents.admin.db.populate', [])
 		})
 
 	};
-})
-.service('populateService', function($window, $http, $q, baseService) {
-	debugger;
+}])
+.service('populateService', ['$window', '$http', '$q', 'baseService', function($window, $http, $q, baseService) {
 	var instance = baseService.factory('populate.service');
 
 	var q = $q.defer();
 
 	instance.init = function(databaseName, size) {
+		$window.databasePopulator = databasePopulator;
 		$window.databasePopulator.init(databaseName, size);
 	};
 
@@ -53,7 +51,6 @@ angular.module('mdzevents.admin.db.populate', [])
 
 
 	return instance;
-}
-);
+}]);
 
 
